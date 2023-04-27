@@ -1,15 +1,15 @@
-import './index.css'
+import "./index.css";
 
 const Counter = () => (
-    <div className="main-container">
-        <h1>Increment/Decrement Counter</h1>
-        <p>using React and Redux</p>
-        <div className="increase-decrease-button-container">
-            <button type="button">-</button>
-            <h2>0</h2>
-            <button type="button">+</button>
-        </div>
+  <div class="container">
+    <h1>Counter App using React Redux</h1>
+    <div class="counter">
+      <button id="increment-btn">-</button>
+      <div id="counter-value">0</div>
+      <button id="decrement-btn">+</button>
     </div>
-)
+    <button id="reset">Reset</button>
+  </div>
+);
 
-export default Counter
+export default Counter;
