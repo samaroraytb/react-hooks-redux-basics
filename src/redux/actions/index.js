@@ -11,3 +11,9 @@ export const decNumber = () => {
     type: "DECREMENT",
   };
 };
+
+export const resetNumber = () => {
+  return {
+    type: "RESET",
+  };
+};
