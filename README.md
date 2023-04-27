@@ -91,3 +91,14 @@ import { useSelector, useDispatch } from "react-redux";
 
 ## useSelector & useDispatch
 useSelector and useDispatch are a set of hooks to use as alternatives to the existing connect() higher-order component
+
+```
+const counterNumber = useSelector((reducer) => reducer.changeCounterNumber);
+const dispatchFn = useDispatch();
+
+<div id="counter-value">{counterNumber}</div>
+
+<button onClick={() => dispatchFn(resetNumber())}>
+```
+
+Can't use useDispatch() in the callback Function.
